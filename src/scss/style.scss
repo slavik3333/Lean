@@ -1,8 +1,50 @@
+@import "../fonts/fonts.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 
-.folder {
-  width: 100px;
-  height:500px;
-  background-size: cover;
-  background-color: #303030;
+
+/* H  E  A  D  E  R */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.header-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar {
+  display: flex;
+  &-items {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 20px 50px 20px 0;
+      font-family: "Roboto-Black";
+      font-size: 14px;
+    }
+    a {
+      text-decoration: none;
+      color: #777777;
+    }
+  }
+  &-search {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 0 100px 0 0;
+      color: #777777;
+    }
+  }
 }
