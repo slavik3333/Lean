@@ -119,7 +119,8 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
-            jquery: 'jquery'
+            jquery: 'jquery',
+            Popper: ['popper.js', 'default']
         }),
         new MiniCssExtractPlugin({
             filename: "./css/[name].css",
