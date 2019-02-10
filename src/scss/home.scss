@@ -71,6 +71,36 @@ main {
     }
 
   }
+  .carousel-control-prev-icon {
+      height: 40px;
+      width: 40px;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      font-weight: 100;
+    &:hover {
+      height: 40px;
+      width: 40px;
+      border: 1px solid #000000;
+      border-radius: 50%;
+      color: #ffffff;
+      background-color: #000000;
+    }
+  }
+  .carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    font-weight: 100;
+    &:hover {
+      height: 40px;
+      width: 40px;
+      border: 1px solid #000000;
+      border-radius: 50%;
+      color: #ffffff;
+      background-color: #000000;
+    }
+  }
   .carousel-indicators {
     display: flex;
     align-items: center;
@@ -87,8 +117,6 @@ main {
       border-radius: 50%;
     }
   }
-
-
   .menu {
     display: flex;
     align-items: center;
@@ -151,6 +179,7 @@ main {
      &:hover {
        .img11 {
          display: block;
+         cursor: pointer;
        }
       }
 
@@ -185,6 +214,7 @@ main {
        &:hover {
          .img21 {
           display: block;
+          cursor: pointer;
         }
       }
     }
@@ -218,6 +248,7 @@ main {
       &:hover {
         .img31 {
           display: block;
+          cursor: pointer;
         }
       }
 
@@ -252,6 +283,7 @@ main {
       &:hover {
         .img41 {
           display: block;
+          cursor: pointer;
         }
       }
 
@@ -286,6 +318,7 @@ main {
       &:hover {
         .img51 {
           display: block;
+          cursor: pointer;
         }
       }
 
@@ -320,6 +353,7 @@ main {
       &:hover {
         .img61 {
           display: block;
+          cursor: pointer;
         }
       }
 
@@ -354,6 +388,7 @@ main {
       &:hover {
         .img71 {
           display: block;
+          cursor: pointer;
         }
       }
 
@@ -388,6 +423,7 @@ main {
       &:hover {
         .img81 {
           display: block;
+          cursor: pointer;
         }
       }
 
@@ -422,6 +458,7 @@ main {
       &:hover {
         .img91 {
           display: block;
+          cursor: pointer;
         }
       }
 
@@ -456,13 +493,11 @@ main {
       &:hover {
         .img101 {
           display: block;
+          cursor: pointer;
         }
       }
 
     }
-
-
-
    }
   .load-more {
     display: flex;
@@ -481,7 +516,7 @@ main {
 footer {
   position: relative;
   margin: 20px 0;
-  box-shadow: 20px 0 0 0 #999;
+  box-shadow: 0 -2px 10px 0 #999;
   z-index: 100;
   .logo {
     display: flex;
@@ -515,7 +550,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px #e1e1e1 solid;
+
     p {
       font-family: "Roboto-Light";
       font-size: 13px;
@@ -524,7 +559,7 @@ footer {
         color: #000000;
       }
       i {
-        padding: 0;
+        padding: 0 5px;
       }
     }
   }
