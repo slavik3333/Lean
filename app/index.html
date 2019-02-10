@@ -8,12 +8,13 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../dist/css/app.css">
 </head>
 <body>
 <header>
     <div class="header-top">
-        <img class="logo" src="../src/img/backgrounds/logo.jpg" alt="logo">
+        <img src="../src/img/backgrounds/logo.jpg" alt="logo">
         <nav class="navbar">
             <ul class="navbar-items">
                 <li><a href="index.html">HOME</a></li>
@@ -26,15 +27,138 @@
     </div>
 </header>
 <main>
-    <div class="slide">
-        <img src="../src/img/backgrounds/index-background1.jpg" alt="background1">
-        <span>LIAN CREATIVE AGENCY</span>
-        <p>MINIMAL FREELANCE PORTFOLIO</p>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active slider">
+                <img class="d-block w-100" src="../src/img/backgrounds/index-background1.jpg" alt="First slide">
+                <span>LIAN CREATIVE AGENCY</span>
+                <p>MINIMAL FREELANCE PORTFOLIO</p>
+            </div>
+            <div class="carousel-item slider">
+                <img class="d-block w-100" src="../src/img/backgrounds/index-background2.jpg" alt="Second slide">
+                <span>DESIGN & BRANDING</span>
+                <p>WE DELIVER QUALITY RESULTS</p>
+            </div>
+            <div class="carousel-item slider">
+                <img class="d-block w-100" src="../src/img/backgrounds/index-background3.jpg" alt="Third slide">
+                <span>SHOOLBOY Q</span>
+                <p>THAT PART NIGGAS WITH ATTITUDE</p>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-
+    <div class="menu">
+        <a href="#">ALL</a>
+        <a href="#">LOGO</a>
+        <a href="#">MOBILE APP</a>
+        <a href="#">WORDPRESS</a>
+        <a href="#">WEB DESIGN</a>
+        <a href="#">UI/IX</a>
+        <a href="#">BRANDING</a>
+    </div>
+    <div class="container">
+       <div class="row images">
+           <div class="col-xl-4 col-md-6">
+               <div class="img1">
+                   <img src="../src/img/backgrounds/picture1.jpg" alt="picture1">
+                   <div class="img11">
+                       <i class="fas fa-plus"></i>
+                   </div>
+               </div>
+               <div class="img2">
+                   <img src="../src/img/backgrounds/picture4.jpg" alt="picture4">
+                   <div class="img21">
+                       <i class="fas fa-plus"></i>
+                   </div>
+               </div>
+               <div class="img3">
+                   <img src="../src/img/backgrounds/picture7.jpg" alt="picture7">
+                   <div class="img31">
+                       <i class="fas fa-plus"></i>
+                   </div>
+               </div>
+           </div>
+           <div class="col-xl-4 col-md-6">
+               <div class="img4">
+                   <img src="../src/img/backgrounds/picture2.jpg" alt="picture2">
+                   <div class="img41">
+                       <i class="fas fa-plus"></i>
+                   </div>
+               </div>
+               <div class="img5">
+                   <img src="../src/img/backgrounds/picture5.jpg" alt="picture5">
+                   <div class="img51">
+                       <i class="fas fa-plus"></i>
+                   </div>
+               </div>
+               <div class="img6">
+                   <img src="../src/img/backgrounds/picture8.jpg" alt="picture8">
+                   <div class="img61">
+                       <i class="fas fa-plus"></i>
+                   </div>
+               </div>
+               <div class="img7">
+                   <img src="../src/img/backgrounds/picture10.jpg" alt="picture10">
+                   <div class="img71">
+                       <i class="fas fa-plus"></i>
+                   </div>
+               </div>
+           </div>
+           <div class="col-xl-4 col-md-6">
+               <div class="img8">
+                   <img src="../src/img/backgrounds/picture3.jpg" alt="picture3">
+                   <div class="img81">
+                       <i class="fas fa-plus"></i>
+                   </div>
+               </div>
+               <div class="img9">
+                   <img src="../src/img/backgrounds/picture6.jpg" alt="picture6">
+                   <div class="img91">
+                       <i class="fas fa-plus"></i>
+                   </div>
+               </div>
+               <div class="img10">
+                   <img src="../src/img/backgrounds/picture9.jpg" alt="picture9">
+                   <div class="img101">
+                       <i class="fas fa-plus"></i>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+    <div class="load-more">
+        <button class="btn load-more">LOAD MORE</button>
+    </div>
 </main>
-
-
+<footer>
+    <div class="logo">
+        <img src="../src/img/backgrounds/logo.jpg" alt="logo">
+    </div>
+    <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fas fa-basketball-ball"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="mulitix">
+        <p><i class="far fa-copyright"></i>2016 <b>MULITIX THEME</b> BY THEMEFORCES. ALL RIGHTS RESERVED.</p>
+    </div>
+</footer>
     <script src="../dist/js/app.js"></script>
 </body>
 </html>
