@@ -189,10 +189,12 @@ main {
 
   .p-gallery2 {
     margin-top: 5px;
+    overflow: hidden;
 
     img {
+      transition: 0.3s;
       &:hover {
-        background-color: rgba(0, 0, 0, 0.7);
+        transform: scale(1.1);
       }
     }
   }
