@@ -46,6 +46,79 @@ main {
         line-height: 30px;
       }
     }
+    .some-skills {
+      .progress-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #000;
+        margin: 0 0 20px;
+      }
+
+      .progress {
+        height: 3px;
+        border-radius: 0;
+        margin-bottom: 30px;
+        overflow: visible;
+        box-shadow: none;
+        position: relative;
+        .progress-bar {
+          background:#a1a1a1;
+          height: 2px;
+          position: relative;
+          top: 5px;
+          box-shadow: none;
+          animation: animate-positive 2s;
+          .progress-value {
+            display: block;
+            font-family: "Roboto-Light";
+            font-size: 12px;
+            padding: 3px 10px;
+            color: #ffffff;
+            background-color: #041608;
+            position: absolute;
+            top: -50px;
+            right: -39px;
+          }
+          .arrow-down {
+            display: block;
+            position: absolute;
+            top: -27px;
+            right: -13px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid #041608;
+          }
+          .circle {
+            color: #000000;
+            font-size: 12px;
+            font-weight: bold;
+            display: block;
+            position: absolute;
+            top: -8px;
+            right: -10px;
+          }
+        }
+
+      }
+      .progress.grey {
+        background: #ebebeb;
+        height: 12px;
+      }
+
+      @-webkit-keyframes animate-positive {
+        0% {
+          width: 0%;
+        }
+      }
+
+      @keyframes animate-positive {
+        0% {
+          width: 0%;
+        }
+      }
+    }
   }
   .team {
     .team-header {
