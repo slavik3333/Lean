@@ -16,7 +16,10 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    img {
+      padding-left: 5%;
+    }
     .dropdown {
       display: none;
       .dropdown-toggle {
@@ -53,8 +56,6 @@ header {
               }
             }
           }
-
-
         }
           a {
           display: block;

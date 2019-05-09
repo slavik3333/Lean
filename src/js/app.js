@@ -22,6 +22,12 @@ $(document).ready(function (){
 
             }
         });
+        $('.show-all').click(function () {
+            if ($('#p-blog1').is(":visible") == true) {
+                $('#p-blog1').show();
+                $('#p-blog2').show();
+            }
+        });
         $('.searchIcon i').click(function(){
             $('.searchInput').toggle(1000, function () {
                 if ($(this).is(":visible") == true) {
@@ -42,5 +48,6 @@ $(document).ready(function (){
                 }
             });
         });
+
     }
 );
