@@ -30,8 +30,6 @@ header {
     }
     .navbar {
       display: flex;
-
-
       &-items {
         display: flex;
         margin: 0;
@@ -40,7 +38,24 @@ header {
           padding: 20px 50px 20px 0;
           font-family: "Roboto-Black";
           font-size: 14px;
+          display: flex;
+          align-items: center;
+          .searchIcon {
+            display: flex;
+            align-items: center;
+            .searchInput {
+              display: none;
+              input {
+                border: 1px transparent;
+                border-radius: 8px;
+                background-color: #fff3cd;
+                font-family: "Roboto-Regular";
+              }
+            }
           }
+
+
+        }
           a {
           display: block;
           position: relative;
@@ -166,41 +181,59 @@ main {
         border-radius: 50%;
       }
     }
-
-    .menu {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 30px 15%;
-      border-top: 1px #e1e1e1 solid;
-      border-bottom: 1px #e1e1e1 solid;
-
-      a {
-        display: block;
-        position: relative;
-        text-decoration: none;
+    .dropdown-menu1 {
+      i {
+        display: none;
+        justify-content: center;
         color: #777777;
-        font-family: "Roboto-Black";
-        font-size: 14px;
-        padding: 30px 50px;
+        font-size: 28px;
+        padding: 25px 0;
+        span {
+          font-family: "Roboto-Bold";
+          padding: 0 15px;
 
+        }
         &:hover {
-          color: #000000;
+          cursor: pointer;
+          color: #888888;
         }
       }
+      .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 15%;
+        border-top: 1px #e1e1e1 solid;
+        border-bottom: 1px #e1e1e1 solid;
 
-      a:not(:last-child)::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 20px;
-        transform: rotate(30deg);
-        display: block;
-        width: 1px;
-        height: 40px;
-        background-color: #e1e1e1;
+        a {
+          display: block;
+          position: relative;
+          text-decoration: none;
+          color: #777777;
+          font-family: "Roboto-Black";
+          font-size: 14px;
+          padding: 30px 50px;
+
+          &:hover {
+            color: #000000;
+          }
+        }
+
+        a:not(:last-child)::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 20px;
+          transform: rotate(30deg);
+          display: block;
+          width: 1px;
+          height: 40px;
+          background-color: #e1e1e1;
+        }
       }
     }
+
 
     .images {
       .img1 {
@@ -695,13 +728,19 @@ main {
         font-size: 14px;
       }
     }
-    .menu {
-      display: flex;
-      flex-direction: column;
-      a:not(:last-child)::after {
+    .dropdown-menu1 {
+      i {
+        display: flex;
+      }
+      .menu {
         display: none;
+        flex-direction: column;
+        a:not(:last-child)::after {
+          display: none;
+        }
       }
     }
+
   }
 }
 @media screen and (max-width: 768px) {

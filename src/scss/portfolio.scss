@@ -39,6 +39,9 @@ main {
     .p-nav {
       display: flex;
       align-items: center;
+      a {
+        cursor: pointer;
+      }
     }
 
     a {
@@ -83,7 +86,9 @@ main {
       background-color: #e1e1e1;
     }
   }
-
+  #p-blog2 {
+    display: none;
+  }
   .p-blog {
     margin: 3% auto;
 
@@ -151,6 +156,13 @@ main {
     .p-share {
       display: flex;
       margin-bottom: 15px;
+      .share-wrapper {
+        display: none;
+        .share-icons {
+          display: flex;
+          height: 100%;
+        }
+      }
       .arrow-left {
         width: 0;
         height: 0;
@@ -180,23 +192,16 @@ main {
         i {
           padding-right: 10px;
         }
-
-        &:hover {
-          background-color: #707070;
-        }
-
-        &:active {
-          background-color: #707070;
-
-          .p-social-media {
-            display: block;
-          }
-        }
       }
     }
   }
-
+  .p-gallery1 {
+    img {
+      width: 100%;
+    }
+  }
   .p-gallery2 {
+    flex-wrap: nowrap;
     margin-top: 5px;
     overflow: hidden;
 

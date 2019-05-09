@@ -78,17 +78,18 @@ main {
             position: absolute;
             top: -50px;
             right: -39px;
+            width: 42px;
           }
           .arrow-down {
             display: block;
             position: absolute;
-            top: -27px;
-            right: -13px;
+            top: -36px;
+            right: -7px;
             width: 0;
             height: 0;
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-top: 8px solid #041608;
+            border-bottom: 10px solid transparent;
+            border-top: 10px solid transparent;
+            border-left: 10px solid #041608;
           }
           .circle {
             color: #000000;
